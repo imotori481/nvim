@@ -3,7 +3,7 @@ return {
   cmd = "Telescope",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    { "nvim-telescope/telescope-fzf-native.nvim", build = vim.fn.has("win32") == 1 and "mingw32-make" or "make" },
   },
   keys = {
     { "<leader>sf", "<cmd>Telescope find_files<CR>", desc = "ファイル検索" },
