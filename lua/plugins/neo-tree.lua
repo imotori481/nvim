@@ -18,6 +18,7 @@ return {
           visible = true,
           hide_dotfiles = false,
           hide_gitignored = false,
+          never_show_by_pattern = vim.fn.has("win32") == 1 and { "*.meta" } or {},
         },
       },
     },
