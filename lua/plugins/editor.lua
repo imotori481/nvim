@@ -44,7 +44,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = {
-      options = { theme = "tokyonight", globalstatus = true },
+      options = { theme = "vscode", globalstatus = true },
     },
   },
   {
