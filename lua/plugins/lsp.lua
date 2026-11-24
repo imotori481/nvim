@@ -81,7 +81,7 @@ return {
     event = "InsertEnter",
     dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
-      keymap = { preset = "default" },
+      keymap = { preset = "super-tab" },
       completion = {
         documentation = { auto_show = true, auto_show_delay_ms = 200 },
       },
